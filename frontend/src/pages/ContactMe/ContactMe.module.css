@@ -1,0 +1,77 @@
+/* General container */
+.container {
+    padding: 50px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light & Dark mode styles */
+.light {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.dark {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Heading */
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contactInfo {
+    margin-bottom: 30px;
+}
+
+.text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Email Button */
+.emailButton {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.emailButton:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode for Email Button */
+.dark .emailButton {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.dark .emailButton:hover {
+    background-color: #ffaa00;
+}
+
+/* Map Container */
+.mapContainer {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+}

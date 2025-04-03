@@ -1,0 +1,57 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 5px 50px;
+    gap: 10px;
+    top: 0; /* Ensure initial position */
+}
+
+.falseNav{
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid black; */
+}
+.navigationButton {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    right: 50px;
+    font-weight: 200;
+}
+
+.nav.hidden {
+    top: -100px; /* Adjust this value based on your navbar height */
+}
+
+.nav.visible {
+    top: 0;
+}
+
+.avatar {
+    width: 60px;
+    background: url('/images/avatar.png') no-repeat center center/cover;
+}
+
+.name {
+    padding: 10px;
+}
+
+.navigationButton li {
+    cursor: pointer;
+}
+
+/* Remove the :visited pseudo-class since it doesn't work on <li> elements */

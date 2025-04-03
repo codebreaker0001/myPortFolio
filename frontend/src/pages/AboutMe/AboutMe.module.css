@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    /* border: 1px solid red; */
+    height: calc(100vh - 80px);
+    padding: 0 100px;
+    overflow-y: scroll;
+  }
+  
+  .left {
+    max-width: 900px;
+    /* border: 1px solid red; */
+    background-color: #00000032;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 0 25px;
+  }
+  
+  .about {
+    font-weight: 200;
+  }
+  
+  .about p {
+    margin: 25px 0;
+    font-size: var(--paragraph-font-size);
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 25px;
+    }
+  }

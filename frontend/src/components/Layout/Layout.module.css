@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+.scrollContainer {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+.section{
+    scroll-snap-align: start;
+    height: calc(100vh - 80px);
+  }

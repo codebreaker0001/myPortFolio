@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #F8F9FA;
+  --accent-color: #FFA500;
+  --text-color: #343A40;
+  --bg-color: #FFFFFF;
+
+  --large-font-size: clamp(40px, 5vw, 80px);
+  --heading-font-size: clamp(2rem, 2.5vw, 3rem);
+  --subheading-font-size: clamp(1.5rem, 2vw, 2.5rem);
+  --paragraph-font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+[data-theme="dark"] {
+  --primary-color: #007BFF;
+  --secondary-color: #32383d;
+  --accent-color: #17A2B8;
+  --text-color: #E9ECEF;
+  --bg-color: #121212;
+}
+
+body {
+  background: linear-gradient(90deg,var(--secondary-color), var(--bg-color));
+  color: var(--text-color);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.inputBox {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.heading {
+  font-size: var(--heading-font-size);
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 50px 0;
+}
