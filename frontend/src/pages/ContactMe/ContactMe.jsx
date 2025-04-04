@@ -13,7 +13,7 @@ const ContactMe = () => {
         <div className={styles.contactInfo}>
           <h3 className={styles.name}>Adarsh Yadav</h3>
           <p className={styles.description}>
-            Chemical Engineering Student at IIT Roorkee | Web3 & AI Enthusiast
+            Chemical Engineering Student at IIT Roorkee | Web-D & Competitive Programming
           </p>
 
           <div className={styles.detailsBlock}>

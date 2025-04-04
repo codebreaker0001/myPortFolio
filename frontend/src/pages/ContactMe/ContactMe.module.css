@@ -22,12 +22,12 @@
 
 .dark .card {
     background: #2a2a2a;
-    color: white;
+    color: #31e4ff;
 }
 
 /* Headings */
 .heading {
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -72,7 +72,7 @@
 
 /* Links */
 .link {
-    color: #007bff;
+    color: #f1f8ff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -82,7 +82,7 @@
 }
 
 .dark .link {
-    color: #017BFE;
+    color: #e4dede;
 }
 
 /* Buttons */
