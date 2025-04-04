@@ -9,6 +9,7 @@
   --heading-font-size: clamp(2rem, 2.5vw, 3rem);
   --subheading-font-size: clamp(1.5rem, 2vw, 2.5rem);
   --paragraph-font-size: clamp(1rem, 1.5vw, 2rem);
+  
 }
 
 [data-theme="dark"] {
@@ -39,7 +40,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Winky Sans", sans-serif;
+  
 }
 
 .heading {

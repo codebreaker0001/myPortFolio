@@ -5,28 +5,36 @@ const ContactMe = () => {
   const { darkMode } = useTheme();
 
   return (
-    <div className={`${styles.container} ${darkMode ? styles.dark : styles.light}`}>
-      <h2 className={styles.heading}>Contact Me</h2>
-      
-      {/* Contact Section */}
-      <div className={styles.contactInfo}>
-        <p className={styles.text}>Feel free to reach out to me via email:</p>
-        <a href="mailto:yashyadav0171@gmail.com" className={styles.emailButton}>
-          📩 Contact via Gmail
-        </a>
+    <div className={`${styles.pageContainer} ${darkMode ? styles.dark : styles.light}`}>
+      <div className={styles.card}>
+        <h2 className={styles.heading}>Contact Me</h2>
+
+        {/* Contact Details */}
+        <div className={styles.contactInfo}>
+          <h3 className={styles.name}>Adarsh Yadav</h3>
+          <p className={styles.description}>
+            Chemical Engineering Student at IIT Roorkee | Web3 & AI Enthusiast
+          </p>
+
+          <div className={styles.detailsBlock}>
+            <p>📧 Email: <a href="mailto:yashyadav0171@gmail.com" className={styles.link}>yashyadav0171@gmail.com</a></p>
+            <p>📞 Phone: <a href="tel:+916392105203" className={styles.link}>+91 6392105203</a></p>
+            <p>📍 Address: IIT Roorkee, Uttarakhand, India</p>
+          </div>
+
+          {/* Buttons Section */}
+          <div className={styles.buttonContainer}>
+            <a href="mailto:yashyadav0171@gmail.com" className={styles.emailButton}>
+              📩 Email Me
+            </a>
+            <a href="https://github.com/codebreaker0001" target="_blank" rel="noopener noreferrer" className={styles.linkedinButton}>
+              🔗 GitHub Profile
+            </a>
+          </div>
+        </div>
       </div>
 
-      {/* Google Map */}
-      <div className={styles.mapContainer}>
-        <iframe
-          title="My Location"
-          className={styles.map}
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.460419927224!2d77.89242617530261!3d30.273627574872415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb38b3f0ccf5d%3A0xf7d5e8b7854a8a82!2sIndian%20Institute%20of%20Technology%20Roorkee!5e0!3m2!1sen!2sin!4v1711983747982!5m2!1sen!2sin"
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      
     </div>
   );
 };

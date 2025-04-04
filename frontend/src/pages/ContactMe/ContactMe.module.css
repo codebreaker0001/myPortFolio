@@ -1,77 +1,157 @@
-/* General container */
-.container {
-    padding: 50px;
-    text-align: center;
+/* Page container */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Light & Dark mode styles */
-.light {
-    background-color: #f9f9f9;
-    color: #333;
+/* Card Layout */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
 
-.dark {
-    background-color: #1e1e1e;
-    color: #fff;
+.dark .card {
+    background: #2a2a2a;
+    color: white;
 }
 
-/* Heading */
+/* Headings */
 .heading {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Contact Info */
-.contactInfo {
-    margin-bottom: 30px;
-}
-
-.text {
-    font-size: 18px;
     margin-bottom: 15px;
 }
 
-/* Email Button */
-.emailButton {
+.subheading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Name */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Description */
+.description {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.dark .description {
+    color: #ccc;
+}
+
+/* Contact Info Block */
+.detailsBlock {
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.dark .detailsBlock {
+    background: #333;
+}
+
+/* Links */
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.dark .link {
+    color: #017BFE;
+}
+
+/* Buttons */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.emailButton,
+.linkedinButton {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s;
 }
 
+.emailButton {
+    background-color: #007bff;
+    color: white;
+}
+
 .emailButton:hover {
     background-color: #0056b3;
 }
 
-/* Dark Mode for Email Button */
+.linkedinButton {
+    background-color: #0A66C2;
+    color: white;
+}
+
+.linkedinButton:hover {
+    background-color: #004182;
+}
+
+/* Dark Mode for Buttons */
 .dark .emailButton {
-    background-color: #ffcc00;
-    color: black;
+    background-color: #017BFE;
+    color: rgb(255, 250, 250);
 }
 
 .dark .emailButton:hover {
-    background-color: #ffaa00;
+    background-color: #017BFE;
+}
+
+.dark .linkedinButton {
+    background-color: #017BFE;
+    color: rgb(255, 255, 255);
+}
+
+.dark .linkedinButton:hover {
+    background-color: #017BFE;
 }
 
 /* Map Container */
 .mapContainer {
-    margin-top: 30px;
+    margin-top: 15px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .map {
-    width: 90%;
-    max-width: 600px;
-    height: 350px;
-    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
     border: none;
 }
